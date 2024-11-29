@@ -14,10 +14,14 @@ class Admin extends Authenticatable
     protected $guard = 'admin';
 
     protected $fillable = [
-        'name',
+        'first_name',
+        'last_name',
         'email',
+        'phone_number',
         'role',
         'password',
+        'profile_picture',
+        'token',
     ];
 
    protected $casts = [
